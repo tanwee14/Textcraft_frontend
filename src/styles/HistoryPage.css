@@ -1,0 +1,156 @@
+.history-page {
+    padding: 20px;
+    margin-top: 80px;
+  }
+  
+  .history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .history-list {
+    max-width: 100%; /* Ensure the container doesn't exceed screen width */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  .history-full {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 10px;
+    overflow-wrap: break-word; /* Break long words to prevent overflow */
+  }
+  
+  .summary-content {
+    background-color: #f4f2ff;
+    border-left: 4px solid #8a2be2; /* Purple border for distinction */
+    padding: 10px;
+    font-family: 'Arial', sans-serif; /* Use a clean, readable font */
+    white-space: normal; /* Ensure text wraps normally within the container */
+    word-wrap: break-word; /* Break long words to prevent overflow */
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    border-radius: 4px;
+    margin-top: 10px;
+    max-width: 100%; /* Ensure summary stays within the container */
+    overflow-x: hidden; /* Prevent any horizontal scrolling */
+  }
+  
+  .summary-content p {
+    margin: 0; /* Remove extra margins */
+    padding: 0; /* Remove extra padding */
+    background-color: inherit; /* Match the background of the parent */
+  }
+  
+  .history-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .history-item:hover {
+    background-color: #f5f5f5;
+  }
+  .history-full .email-content {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    white-space: pre-wrap; /* To keep email formatting */
+  }
+  
+  .history-initial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .history-initial p {
+    margin: 0;
+  }
+  
+  .history-full {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .history-full a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .history-full a:hover {
+    text-decoration: underline;
+  }
+  
+  .expanded {
+    background-color: #f0f8ff;
+  }
+  
+  .copy-button {
+    background-color: #d8b1e1; /* Purple lilac color */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #b76cd3; /* Darker lilac on hover */
+}
+
+.copy-button:focus {
+    outline: none; /* Remove outline */
+}
+
+.paraphrase-content {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.image-container {
+  margin-top: 10px;
+  text-align: center; /* Center the image container */
+}
+
+.uploaded-image {
+  display: block;
+  max-width: 100px; /* Control image size */
+  max-height: 100px;
+  margin: 0 auto; /* Center the image */
+  border-radius: 8px;
+  object-fit: cover; /* Keep the aspect ratio */
+}
+
+.uploaded-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  transition: transform 0.3s ease;
+}
+
+.extracted-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555; /* Slightly muted color for extracted text */
+}
+
+.extracted-text p {
+  word-wrap: break-word; /* Ensure long text wraps properly */
+  white-space: pre-wrap; /* Preserve spacing and new lines */
+}
+
+.clear-history-button{
+  margin-bottom: 20px;
+}
+
+

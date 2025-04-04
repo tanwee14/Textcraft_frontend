@@ -1,0 +1,234 @@
+.about-us {
+  font-family: 'Arial', sans-serif;
+  color: var(--color-purple);
+  background-color: var(--color-lilac-lightest);
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--color-lilac-medium), var(--color-lilac-dark));
+  color: var(--color-white);
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-values {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem 0;
+  text-align: left;
+}
+
+.mission, .values {
+  flex: 1;
+}
+
+.values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.values li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  text-align: left;
+}
+
+.values li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-lilac-dark);
+}
+
+.features {
+  background-color: var(--color-white);
+  text-align: center; /* Center the heading */
+  padding: 4rem 0;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Display 4 features per row */
+  gap: 2rem;
+  justify-content: center; /* Centers the grid if there are fewer than 4 items */
+}
+
+
+.feature {
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--color-lilac-lightest);
+}
+
+.feature-circle {
+  width: 80px;
+  height: 80px;
+  background-color: var(--color-lilac-light);
+  border-radius: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: var(--color-purple);
+}
+
+.feature h4 {
+  margin-bottom: 0.5rem;
+}
+
+.feature.hovered {
+  transform: translateY(-10px);
+}
+
+.feature.hovered .feature-circle {
+  background-color: var(--color-lilac-dark);
+}
+
+.feature.hovered .feature-icon {
+  color: var(--color-white);
+}
+
+.faq {
+  background-color: var(--color-lilac-light);
+  padding: 3rem 0;
+}
+
+.faq-item {
+  background-color: var(--color-white);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-purple);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 1000px;
+  padding: 1rem;
+}
+
+.cta {
+  background-color:#9a39ca ;
+  color: var(--color-white);
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--color-white);
+  color: var(--color-purple);
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--color-lilac-light);
+  transform: translateY(-3px);
+  color: antiquewhite;
+}
+
+.arrow-icon {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover .arrow-icon {
+  transform: translateX(5px);
+}
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: rgb(204, 129, 224);
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  color: rgb(204, 129, 224);
+}
+
+@media (max-width: 1024px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mission-values {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}

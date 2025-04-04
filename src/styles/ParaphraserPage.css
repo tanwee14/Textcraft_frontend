@@ -1,0 +1,130 @@
+.paraphraser-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 2rem;
+    background-color: #f8f0ff;
+    min-height: 100vh;
+  }
+  
+  .paraphraser-title {
+    text-align: center;
+    color: #6a0dad;
+    margin-bottom: 2rem;
+  }
+  
+  .paraphraser-content {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .input-section, .output-section {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #6a0dad;
+    font-weight: bold;
+  }
+  
+  textarea, input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d4b3ff;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  textarea:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: #6a0dad;
+  }
+  
+  .input-controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .input-controls .input-group {
+    flex: 1;
+  }
+  
+  .submit-btn {
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #8a2be2;
+  }
+  
+  .submit-btn:disabled {
+    background-color: #b19cd9;
+    cursor: not-allowed;
+  }
+  
+  .output-section h2 {
+    color: #6a0dad;
+    margin-bottom: 1rem;
+  }
+  
+  .paraphrase-item {
+    background-color: #f0e6ff;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .paraphrase-item p {
+    margin: 0;
+    padding-right: 2.5rem;
+  }
+  
+  .copy-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    color: #6a0dad;
+    cursor: pointer;
+    padding: 0.25rem;
+    transition: color 0.3s ease;
+  }
+  
+  .copy-btn:hover {
+    color: #8a2be2;
+  }
+  
+  .no-paraphrases {
+    color: #6a0dad;
+    font-style: italic;
+  }
+  
+  @media (max-width: 768px) {
+    .paraphraser-content {
+      flex-direction: column;
+    }
+  }

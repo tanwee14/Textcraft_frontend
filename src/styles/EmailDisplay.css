@@ -1,0 +1,51 @@
+/* Ensure the email display container is scrollable if the content overflows */
+.email-display {
+  text-align: left;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  max-height: 70vh; /* Set a max height relative to the viewport */
+  overflow-y: auto; /* Enable vertical scrolling when content is too long */
+  box-sizing: border-box;
+}
+
+.email-display h2 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.email-body {
+  margin-top: 20px;
+  white-space: pre-wrap; /* Preserve whitespace for line breaks */
+}
+
+.email-line {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.subject-line {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+/* To ensure the page layout works well with scrolling, and the footer doesn't overlap */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding-bottom: 60px; /* Space for footer */
+}
+
+

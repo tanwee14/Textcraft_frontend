@@ -1,0 +1,120 @@
+.email-gen-page {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0e6ff;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .email-gen-container {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(106, 48, 147, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .email-form, .gen-email {
+    padding: 2rem;
+    width: 50%;
+  }
+  
+  .email-form {
+    background-color: #f8f2ff;
+  }
+  
+  h1, h2 {
+    color: #6a3093;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    margin-right: 0.5rem;
+    color: #6a3093;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #6a3093;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #d8c1ff;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border-color: #6a3093;
+  }
+  
+  .gen-btn, .send-gmail-btn {
+    background-color: #6a3093;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .gen-btn:hover, .send-gmail-btn:hover {
+    background-color: #8e44ad;
+  }
+  
+  .email-content {
+    background-color: #f8f2ff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .send-gmail-btn {
+    background-color: #4285F4;
+  }
+  
+  .send-gmail-btn:hover {
+    background-color: #3367D6;
+  }
+  
+  @media (max-width: 768px) {
+    .email-gen-container {
+      flex-direction: column;
+    }
+  
+    .email-form, .gen-email {
+      width: 100%;
+    }
+  }

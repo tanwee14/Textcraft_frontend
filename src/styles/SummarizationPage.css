@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f3e7ff 0%, #e9d5ff 50%, #ddd6fe 100%);
+  min-height: 100vh;
+}
+
+.summarization-page {
+  display: flex;
+  height: calc(100vh - 60px); /* Subtract the padding-top value */
+  padding-top: 60px; /* Adjust this value based on your navbar height */
+}
+
+.input-section,
+.output-section {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.card-title {
+  color: #7e22ce;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.text-input {
+  width: 100%;
+  min-height: 200px;
+  padding: 0.75rem;
+  border: 2px solid #d8b4fe;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.text-input:focus {
+  outline: none;
+  border-color: #a855f7;
+  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.2);
+}
+
+.file-input-container {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-label {
+  background-color: #a855f7;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.file-label:hover {
+  background-color: #9333ea;
+}
+
+.file-name {
+  margin-left: 1rem;
+  color: #7e22ce;
+}
+
+.slider-container {
+  margin-top: 1rem;
+}
+
+.slider-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #7e22ce;
+}
+
+.slider {
+  width: 100%;
+  /* -webkit-appearance: none; */
+  height: 8px;
+  border-radius: 5px;
+  background: #e9d5ff;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #7e22ce;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1.5rem;
+  background-color: #a855f7;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #9333ea;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.summary-content {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.summary-content h3 {
+  color: #7e22ce;
+  margin-top: 1.5rem;
+}
+
+.error-message {
+  color: #ef4444;
+  font-weight: 500;
+}
+
+.placeholder-text {
+  color: #9ca3af;
+  text-align: center;
+  font-style: italic;
+}
+
+.remove-file-button {
+  background: none;
+  border: none;
+  color: red; /* Change the color to your preference */
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-left: 10px; /* Space between file name and button */
+}
+
+.remove-file-button:hover {
+  color: darkred; /* Change color on hover */
+}
+
+/* Your existing CSS above */
+
+.output-section {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  position: relative; /* New for loader positioning */
+}
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #7e22ce;
+  position: absolute; /* Centers the loader within the output section */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  z-index: 10;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .summarization-page {
+    flex-direction: column;
+  }
+
+  .input-section,
+  .output-section {
+    padding: 1rem;
+  }
+}
