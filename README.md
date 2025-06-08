@@ -1,4 +1,6 @@
-🧠 TextCraft Frontend
+### 🧠 TextCraft Frontend
+
+
 TextCraft is an AI-powered writing assistant that helps users generate, enhance, and analyze text content intelligently. This is the frontend React application that connects to powerful NLP models on the backend.
 
 🎯 Features
